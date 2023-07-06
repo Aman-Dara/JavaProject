@@ -5,28 +5,33 @@ public class CalculateDiscount {
 	// Declare variables
 	double markedPrice;
 	double sellingPrice;
-	double priceAfter50PercentDiscount;
-	double promoCode;
-	double discountAfterPromoCode;
-	double amountAfterAddDiscount; // amount after additional discount
+	double discount;
+	String promoCode;
 
 	// Create Methods
 	void calcualteDiscount() {
-		priceAfter50PercentDiscount = (markedPrice * 50) / 100;
-		sellingPrice = markedPrice - priceAfter50PercentDiscount;
+		discount = (markedPrice * 50) / 100;
+		sellingPrice = markedPrice - discount;
 		System.out.println("The price after 50% discount is " + sellingPrice);
-	}
 
-	void caluculateAdditionalDiscount() {
-		if (promoCode == 5 || promoCode == 10 || promoCode == 20) {
-			discountAfterPromoCode = (sellingPrice * promoCode) / 100;
-			amountAfterAddDiscount = sellingPrice - discountAfterPromoCode;
-			System.out.println(
-					"Selling Price after " + promoCode + " Percent additional discount =" + amountAfterAddDiscount);
+		if (promoCode.equals("promo5") || promoCode.equals("promo10") || (promoCode.equals("promo20"))) {
+			if (promoCode.equals("promo5")) {
+				discount = (sellingPrice * 5) / 100;
+				discount = sellingPrice - discount;
+				System.out.println("Selling Price after applying promo5  " + discount);
+				
+			} else if (promoCode.equals("promo10")) {
+				discount = (sellingPrice * 10) / 100;
+				discount = sellingPrice - discount;
+				System.out.println("Selling Price after applying promo10  " + discount);
+				
+			} else if (promoCode.equals("promo20")) {
+				discount = (sellingPrice * 20) / 100;
+				discount = sellingPrice - discount;
+				System.out.println("Selling Price after applying promo20  " + discount);
+			}
 		} else {
 			System.out.println("Your total is " + sellingPrice);
 		}
-
 	}
-
 }
