@@ -19,12 +19,12 @@ public class CalculateDiscount {
 				discount = (sellingPrice * 5) / 100;
 				discount = sellingPrice - discount;
 				System.out.println("Selling Price after applying promo5  " + discount);
-				
+
 			} else if (promoCode.equals("promo10")) {
 				discount = (sellingPrice * 10) / 100;
 				discount = sellingPrice - discount;
 				System.out.println("Selling Price after applying promo10  " + discount);
-				
+
 			} else if (promoCode.equals("promo20")) {
 				discount = (sellingPrice * 20) / 100;
 				discount = sellingPrice - discount;
