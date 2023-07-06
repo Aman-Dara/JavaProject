@@ -17,13 +17,11 @@ public class DiscountMain {
 
 		cd.markedPrice = sc.nextDouble();
 
+		System.out.println("Please enter the promo Code (promo5 for 5% || promo10 for 10% || promo20 for 20%) if available otherwise enter 0 to continue");
+
+		cd.promoCode = sc.next();
+
 		cd.calcualteDiscount();
-
-		System.out.println("Please enter the promo Code (5% 10% Or 20%) if available otherwise enter 0 to continue");
-
-		cd.promoCode = sc.nextDouble();
-
-		cd.caluculateAdditionalDiscount();
 
 		sc.close();
 	}
