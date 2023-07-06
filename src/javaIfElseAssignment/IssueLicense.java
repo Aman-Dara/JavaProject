@@ -6,7 +6,7 @@ public class IssueLicense {
 	String licenseLevel;
 
 	void checkUserEligibility() {
-		if (age >= 16 && licenseLevel.equals("No License")) {
+		if (age >= 16 && licenseLevel.equals("NoLicense")) {
 			System.out.println("You are eligible for G1 License");
 		} else if (age >= 16 && licenseLevel.equals("G1")) {
 			System.out.println("You are eligible for G2");
