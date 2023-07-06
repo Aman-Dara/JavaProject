@@ -16,9 +16,9 @@ public class LicenseMain {
 
 		il.age = sc.nextInt();
 
-		System.out.println("Enter License Level - 0 for No License /1 for G1/ 2 for G2");
+		System.out.println("Enter License Level - NoLicense /G1 or G2");
 
-		il.licenseLevel = sc.nextInt();
+		il.licenseLevel = sc.next();
 
 		il.checkUserEligibility();
 
