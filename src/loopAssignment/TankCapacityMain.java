@@ -7,10 +7,6 @@ public class TankCapacityMain {
 		
 		CheckTankCapacity capacity = new CheckTankCapacity();
 		
-		capacity.bucketCapacityInLitres = 10;
-		
-		capacity.tankCapacityInLitres = 100;
-		
 		capacity.fillTankToCapacity();
 
 	}

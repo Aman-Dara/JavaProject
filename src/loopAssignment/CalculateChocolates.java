@@ -2,16 +2,19 @@ package loopAssignment;
 
 public class CalculateChocolates {
 
-	int chocolateCount;
-	int maxChocolates;
+	int minChocolatesInABox = 27;
+	int maxChocolates = 63;
 
 	void addChocolates() {
-		while (chocolateCount <= maxChocolates) {
-			System.out.println("Total chocolates in the box " + chocolateCount);	
-			chocolateCount += 5;
-			if(chocolateCount==63) {
+		while (minChocolatesInABox != maxChocolates) {
+
+			System.out.println("Total number of chocolates after adding 5 chocolates " + minChocolatesInABox );
+			minChocolatesInABox += 5;
+			
+			if(minChocolatesInABox > maxChocolates) {
 				break;
 			}
+
 		}
 	}
 

@@ -6,9 +6,6 @@ public class ChocolateMain {
 		// TODO Auto-generated method stub
 		CalculateChocolates cc = new CalculateChocolates();
 
-		cc.chocolateCount = 27;
-		cc.maxChocolates = 63;
-
 		cc.addChocolates();
 
 	}
